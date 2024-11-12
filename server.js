@@ -14,7 +14,7 @@ app.listen(port, () => {
 
 const carModel = require('./carModel');
 
-const uri = 'mongodb+srv://admin1:OKxvTJqwobPZaJZG@cluster0.d13ikfs.mongodb.net/PH27669'
+const uri = 'mongodb+srv://admin1:Y6rWUgAbpxLBmHd7@cluster0.d13ikfs.mongodb.net/PH27669'
 
 app.get('/', async (req, res) => {
     await mongoose.connect(uri);
