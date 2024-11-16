@@ -1,3 +1,4 @@
+// carModel.js
 const mongoose = require('mongoose');
 
 const CarSchema = new mongoose.Schema({
@@ -7,7 +8,6 @@ const CarSchema = new mongoose.Schema({
     },
     namSX: {
         type: Number
-
     },
     hang: {
         type: String,
@@ -15,8 +15,11 @@ const CarSchema = new mongoose.Schema({
     },
     gia: {
         type: Number
+    },
+    anh: {
+        type: String
     }
 });
 
-const CarModel = new mongoose. model('car', CarSchema)
+const CarModel = mongoose.model('car', CarSchema);
 module.exports = CarModel;
